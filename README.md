@@ -1,61 +1,35 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## Inspiration
+The COVID-19 pandemic has affected the global food industry as governments shut down restaurants and bars to slow down the spread of the virus. Introducing Eatsa, a social media food influencer app aimed to support businesses owned by Black, Indigenous, and People of Color (BIPOC). Portion of the proceeds from each commission that an individual makes is allocated towards a charity of choice by the restaurateur from a preselected, BIPOC-supportive non-profit organization list vetted by Eatsa.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## What it does
+1) The user can upload recent food photos onto their feed, tagging the restaurants that work with Eatsa or redirect them to their feed where it conveniently enables the ‘visitor’ to purchase food directly from the restaurant for pick up.
 
-## About Laravel
+2) The user can generate a personal link to their personal feed OR create a Facebook Business Page (if they are a restaurant owner). An AI bot will respond to any questions related to their stories on cross messaging platforms, and direct them to the Eatsa app once consented. 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+3) The visitor from the personalized link can purchase a food item identified on the feed with trusted payment processing platform, Stripe.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+4) As soon as a purchase is completed by the ‘visitor’, the Influencer’s earnings gain up to a 5% commission as an incentive for driving business to other merchants.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+5) The user can check their position on the platform via a tracking system. The more the number of visitors click on the referral link, the higher the user will advance on the Eatsa Chart.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## How we built it
+- Docker (Containerization)
+- PHP
+- Angular 7
+- Laravel
+- MySQL
+- Redis
+- Stripe Payment 
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Challenges we ran into
+The biggest challenge was definitely setting up the docker container with the MySQL database, it is my first time coding in PHP. Through this experience, we were able to definitely learn how to manage dependency errors better. This was also our first time joining a 3 day hackathon, we had to evaluate who’s strongest at a certain skill set and divide tasks accordingly. Surprisingly, communication was done very well, and that carried us.
 
-## Laravel Sponsors
+## Accomplishments that we're proud of
+Putting something together in 36 hours. There is always a sense of accomplishment whether you’ve picked up a new tech stack or work with someone new. These hackathons are a great way to bring your ideas to life outside of your professional work niche. For our team, we are proud of wrapping up our backend service, with a tint of mobile app prototypes. 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## What we learned
+The takeaway here is definitely learning how we all function as a team. In terms of technical skills, a lot can be said for each person in the team. 
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## What's next for EatSA
+We are thinking of stress testing more for this project, or conducting user research. After receiving feedback, we'd like to make incremental progress towards our final deliverable (iOS/Android app + Web App)
